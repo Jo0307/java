@@ -9,6 +9,8 @@ public class JavaBasic3 {
         concatenation4();*/
         stringComparison1();
         stringComparison2();
+        Smethod();
+        Smethod2();
     }
     public static void concatenation(int age){
         if(age == 27){
@@ -17,6 +19,32 @@ public class JavaBasic3 {
             System.out.println("Next year, you will be "+ (age+1));
         }
     }
+
+    public static void Smethod(){
+
+        String greeting = "Hello, World";
+        String location = greeting.substring(7,12);
+        System.out.println(location);
+
+        String name = "Peter, Paul, Mary";
+        String[] result = name.split(",");
+        StringBuilder res = new StringBuilder();
+
+        for (int i =0; i < result.length; i++){
+            res.append(result[i]);
+        }
+        System.out.println(res.toString());
+    }
+
+    public static void Smethod2(){
+        String name = "Peter, Paul, Mary";
+        String[] result = name.split(",");
+
+        for (int i =0; i<result.length; i++){
+            System.out.print(result[i]);
+        }
+    }
+
 
     public static void concatenation2(){
         String [] nameList = {"Peter", "Paul", "Mary", "Minsu", "Jack"};
